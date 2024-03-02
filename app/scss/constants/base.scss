@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    @include text-16;
+    @include font-400;
+    color: $clr-white;
+}
+
+a {
+    text-decoration: unset;
+    text-transform: unset;
+    color: $clr-white;
+}
+
+.mobile-hide {
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}
+
+.desktop-hide {
+    @include desktop {
+        display: none;
+    }
+}
